@@ -65,9 +65,10 @@ export default function RootLayout({
 				<meta name="google-site-verification" content="7dYbm5_iMr336y4cH-MyFP-vcr0Fy-VFhZtzJXPTzDI" />
 
 				{/* Google AdSense */}
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1791146899524566" crossOrigin="anonymous"></script>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1791146899524566"
+     crossorigin="anonymous"></script>
 
-				{/* Google Analytics */}
+				{/* Google Analytics */} 
 				<GoogleAnalytics />
 			</head>
 			<body className={inter.className} suppressHydrationWarning>
