@@ -12,11 +12,11 @@ export function Footer() {
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <ImageIcon className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">ResizeIt</span>
+              <span className="text-xl font-bold text-white">Ammy Resize</span>
             </Link>
             <p className="text-slate-400 mb-4 max-w-md">
               Professional image resizing tool that helps you optimize your images for web, social media, and print.
-              Fast, secure, and completely free.
+              Fast, secure, and completely free for everyone.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-white transition-colors">
@@ -72,7 +72,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-          <p>&copy; {new Date().getFullYear()} ResizeIt. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} © 2025 Ammy Resize. All rights reserved. | Developed by Abdullah. Dev
+
+</p>
         </div>
       </div>
     </footer>
