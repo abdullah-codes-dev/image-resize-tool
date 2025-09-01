@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Target, Award, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
-	title: "About Us - ResizeIt | Professional Image Resizing Tool",
+	title: "About Us - Ammy Resize | Professional Image Resizing Tool",
 	description:
-		"Learn about ResizeIt, the professional image resizing tool trusted by millions. Our mission, values, and commitment to providing the best image optimization experience.",
+		"Learn about Ammy Resize, the professional image resizing tool trusted by millions. Our mission, values, and commitment to providing the best image optimization experience.",
 	keywords:
-		"about resizeIt, image resizing company, photo editing team, image optimization mission",
+		"about Ammy Resize , image resizing company, photo editing team, image optimization mission",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
 				{/* Hero Section */}
 				<div className='text-center mb-16'>
 					<h1 className='text-4xl font-bold text-slate-900 mb-6'>
-						About ResizeIt
+						About Ammy Resize
 					</h1>
 					<p className='text-xl text-slate-600 max-w-3xl mx-auto'>
 						We&apos;re passionate about making image optimization
@@ -34,14 +34,14 @@ export default function AboutPage() {
 					</h2>
 					<div className='prose prose-lg text-slate-600 max-w-none'>
 						<p className='mb-6'>
-							ResizeIt was born from a simple frustration: why
+							Ammy Resize was born from a simple frustration: why
 							should resizing images be complicated? As developers
 							and designers ourselves, we found existing tools
 							either too complex, too slow, or required expensive
 							subscriptions for basic functionality.
 						</p>
 						<p className='mb-6'>
-							In 2024, we set out to create the perfect image
+							In 2023, we set out to create the perfect image
 							resizing tool - one that would be fast, secure, and
 							completely free. We believe that everyone should
 							have access to professional-grade image optimization
@@ -49,7 +49,7 @@ export default function AboutPage() {
 							project or a business optimizing your website.
 						</p>
 						<p>
-							Today, ResizeIt processes millions of images every
+							Today, Ammy Resize processes millions of images every
 							month, helping users around the world optimize their
 							visual content with ease and confidence.
 						</p>
