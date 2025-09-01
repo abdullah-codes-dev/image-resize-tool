@@ -1,255 +1,205 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Terms of Service - ResizeIt | Usage Terms and Conditions",
-	description:
-		"Read ResizeIt's terms of service to understand the terms and conditions for using our free image resizing tool.",
-	keywords:
-		"terms of service, usage terms, image resizing terms, service conditions",
+  title: "Terms of Service - Ammy Resize| Usage Terms and Conditions",
+  description:
+    "Read Ammy Resize's Terms of Service to understand the rules, responsibilities, and conditions of using our free image resizing tool.",
+  keywords:
+    "terms of service, usage terms, image resizing terms, service conditions",
 };
 
 export default function TermsPage() {
-	return (
-		<div className='py-16'>
-			<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<div className='prose prose-lg max-w-none'>
-					<h1 className='text-4xl font-bold text-slate-900 mb-8'>
-						Terms of Service
-					</h1>
+  const lastUpdated = new Date().toLocaleDateString();
 
-					<p className='text-lg text-slate-600 mb-8'>
-						<strong>Last updated:</strong>{" "}
-						{new Date().toLocaleDateString()}
-					</p>
+  return (
+    <div className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-10">
+        {/* Sidebar Table of Contents */}
+        <aside className="hidden lg:block lg:col-span-1 sticky top-24 self-start bg-white p-6 border rounded-2xl shadow-sm h-fit">
+          <h3 className="font-semibold text-slate-900 mb-4 text-lg">
+            Quick Navigation
+          </h3>
+          <ul className="space-y-3 text-slate-700 text-sm">
+            <li><a href="#acceptance" className="hover:text-blue-600">Acceptance of Terms</a></li>
+            <li><a href="#description" className="hover:text-blue-600">Description of Service</a></li>
+            <li><a href="#responsibilities" className="hover:text-blue-600">User Responsibilities</a></li>
+            <li><a href="#availability" className="hover:text-blue-600">Service Availability</a></li>
+            <li><a href="#liability" className="hover:text-blue-600">Limitation of Liability</a></li>
+            <li><a href="#privacy" className="hover:text-blue-600">Privacy & Data</a></li>
+            <li><a href="#intellectual" className="hover:text-blue-600">Intellectual Property</a></li>
+            <li><a href="#termination" className="hover:text-blue-600">Termination</a></li>
+            <li><a href="#changes" className="hover:text-blue-600">Changes to Terms</a></li>
+            <li><a href="#law" className="hover:text-blue-600">Governing Law</a></li>
+            <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+            <li><a href="#severability" className="hover:text-blue-600">Severability</a></li>
+          </ul>
+        </aside>
 
-					<div className='bg-green-50 border border-green-200 rounded-lg p-6 mb-8'>
-						<h2 className='text-xl font-semibold text-green-900 mb-2'>
-							Welcome to ResizeIt
-						</h2>
-						<p className='text-green-800'>
-							These terms of service outline the rules and
-							regulations for the use of ResizeIt&apos;s image
-							resizing service. By using our service, you agree to
-							these terms.
-						</p>
-					</div>
+        {/* Main Content */}
+        <main className="lg:col-span-3 space-y-8">
+          {/* Header */}
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-slate-900 mb-3">
+              Terms of Service
+            </h1>
+            <p className="text-slate-600 text-lg">
+              <strong>Last updated:</strong> {lastUpdated}
+            </p>
+          </div>
 
-					<h2>1. Acceptance of Terms</h2>
+          {/* Intro Card */}
+          <div className="bg-green-50 border border-green-200 rounded-2xl p-6 shadow-sm">
+            <h2 className="text-xl font-semibold text-green-900 mb-2">
+              Welcome to Ammy Resize
+            </h2>
+            <p className="text-green-800">
+              These Terms of Service outline the rules and regulations for
+              using Ammy Resize’s image resizing tool. By using our service,
+              you agree to these terms.
+            </p>
+          </div>
 
-					<p>
-						By accessing and using ResizeIt (&quot;the
-						Service&quot;), you accept and agree to be bound by the
-						terms and provision of this agreement. If you do not
-						agree to abide by the above, please do not use this
-						service.
-					</p>
+          {/* Terms Sections in Cards */}
+          <section id="acceptance" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">1. Acceptance of Terms</h2>
+            <p className="text-slate-700">
+              By using Ammy Resize, you accept and agree to these terms. If you do
+              not agree, please discontinue using our service.
+            </p>
+          </section>
 
-					<h2>2. Description of Service</h2>
+          <section id="description" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">2. Description of Service</h2>
+            <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <li>Resize images by adjusting dimensions</li>
+              <li>Optimize image file sizes</li>
+              <li>Convert between formats (JPEG, PNG, WebP)</li>
+              <li>Adjust image quality</li>
+            </ul>
+            <p className="mt-2 text-slate-700">
+              All image processing happens locally in your browser. We never
+              store your images.
+            </p>
+          </section>
 
-					<p>
-						ResizeIt is a free, web-based image resizing tool that
-						allows users to:
-					</p>
-					<ul>
-						<li>Resize images by adjusting dimensions</li>
-						<li>Optimize image file sizes</li>
-						<li>
-							Convert between different image formats (JPEG, PNG,
-							WebP)
-						</li>
-						<li>Adjust image quality settings</li>
-					</ul>
+          <section id="responsibilities" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">3. User Responsibilities</h2>
+            <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <li>No illegal, harmful, or offensive content</li>
+              <li>Respect applicable laws</li>
+              <li>No infringement of intellectual property</li>
+              <li>No reverse engineering or system compromise</li>
+              <li>No automated misuse or overload</li>
+            </ul>
+          </section>
 
-					<p>
-						All image processing is performed client-side in your
-						web browser. We do not store or have access to your
-						images.
-					</p>
+          <section id="availability" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">4. Service Availability</h2>
+            <p className="text-slate-700">Service may be interrupted due to:</p>
+            <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <li>Maintenance</li>
+              <li>Technical issues</li>
+              <li>Force majeure events</li>
+              <li>Third-party dependencies</li>
+            </ul>
+          </section>
 
-					<h2>3. User Responsibilities</h2>
+          <section id="liability" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">5. Limitation of Liability</h2>
+            <p className="text-slate-700">
+              Ammy Resize is provided “as is” without warranties. We are not liable
+              for any damages, data loss, or service interruptions.
+            </p>
+          </section>
 
-					<h3>3.1 Acceptable Use</h3>
-					<p>
-						You agree to use ResizeIt only for lawful purposes and
-						in accordance with these Terms of Service. You agree not
-						to:
-					</p>
-					<ul>
-						<li>
-							Process images that contain illegal, harmful, or
-							offensive content
-						</li>
-						<li>Violate any applicable laws or regulations</li>
-						<li>
-							Infringe upon the intellectual property rights of
-							others
-						</li>
-						<li>
-							Attempt to reverse engineer or compromise the
-							security of our service
-						</li>
-						<li>
-							Use automated tools to access our service in a way
-							that could damage or overload our systems
-						</li>
-					</ul>
+          <section id="privacy" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">6. Privacy and Data Protection</h2>
+            <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <li>Images are processed locally</li>
+              <li>We never store or access your images</li>
+              <li>Only minimal anonymous analytics collected</li>
+              <li>No personal info shared with third parties</li>
+            </ul>
+            <p className="mt-2">
+              See our{" "}
+              <a href="/privacy" className="text-blue-600 hover:underline">
+                Privacy Policy
+              </a>{" "}
+              for full details.
+            </p>
+          </section>
 
-					<h3>3.2 Content Ownership</h3>
-					<p>
-						You retain full ownership of all images you process
-						through ResizeIt. We do not claim any rights to your
-						content, and since processing happens in your browser,
-						we never have access to your images.
-					</p>
+          <section id="intellectual" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">7. Intellectual Property</h2>
+            <ul className="list-disc list-inside text-slate-700 space-y-1">
+              <li>No copying, modifying, or redistributing service</li>
+              <li>No reverse engineering algorithms/code</li>
+              <li>No misuse of branding or trademarks</li>
+              <li>No derivative works</li>
+            </ul>
+          </section>
 
-					<h2>4. Service Availability</h2>
+          <section id="termination" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">8. Termination</h2>
+            <p className="text-slate-700">
+              We may suspend or terminate access for violations, fraud, or abuse
+              without notice.
+            </p>
+          </section>
 
-					<p>
-						We strive to maintain high availability of our service,
-						but we cannot guarantee uninterrupted access. The
-						service may be temporarily unavailable due to:
-					</p>
-					<ul>
-						<li>Scheduled maintenance</li>
-						<li>Technical issues</li>
-						<li>Force majeure events</li>
-						<li>Third-party service dependencies</li>
-					</ul>
+          <section id="changes" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">9. Changes to Terms</h2>
+            <p className="text-slate-700">
+              We may update these terms anytime. Continued use means acceptance
+              of the new terms.
+            </p>
+          </section>
 
-					<h2>5. Limitation of Liability</h2>
+          <section id="law" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">10. Governing Law</h2>
+            <p className="text-slate-700">
+              These terms are governed by applicable laws. Disputes will be
+              handled through proper legal channels.
+            </p>
+          </section>
 
-					<p>
-						ResizeIt is provided &quot;as is&quot; without any
-						warranties, expressed or implied. We shall not be liable
-						for any damages arising from:
-					</p>
-					<ul>
-						<li>Use or inability to use our service</li>
-						<li>
-							Loss of data or images (though processing is local
-							to your device)
-						</li>
-						<li>Service interruptions or technical issues</li>
-						<li>
-							Any indirect, incidental, or consequential damages
-						</li>
-					</ul>
+          <section id="contact" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">11. Contact Information</h2>
+            <ul className="text-slate-700 space-y-1">
+              <li>Email: legal@AmmyResize.com</li>
+              <li>
+                Contact Form:{" "}
+                <a href="/contact" className="text-blue-600 hover:underline">
+                  example.com/contact
+                </a>
+              </li>
+            </ul>
+          </section>
 
-					<h2>6. Privacy and Data Protection</h2>
+          <section id="severability" className="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-slate-900">12. Severability</h2>
+            <p className="text-slate-700">
+              If any part of these terms is invalid, the rest remain fully
+              enforceable.
+            </p>
+          </section>
 
-					<p>
-						Your privacy is important to us. Our privacy practices
-						are detailed in our
-						<a
-							href='/privacy'
-							className='text-blue-600 hover:underline'>
-							Privacy Policy
-						</a>
-						. Key points include:
-					</p>
-					<ul>
-						<li>Images are processed locally in your browser</li>
-						<li>We do not store or access your images</li>
-						<li>We collect minimal, anonymous usage analytics</li>
-						<li>
-							We do not share personal information with third
-							parties
-						</li>
-					</ul>
-
-					<h2>7. Intellectual Property</h2>
-
-					<p>
-						The ResizeIt service, including its design,
-						functionality, and code, is protected by intellectual
-						property laws. You may not:
-					</p>
-					<ul>
-						<li>Copy, modify, or distribute our service</li>
-						<li>Reverse engineer our algorithms or code</li>
-						<li>
-							Use our branding or trademarks without permission
-						</li>
-						<li>Create derivative works based on our service</li>
-					</ul>
-
-					<h2>8. Termination</h2>
-
-					<p>
-						We reserve the right to terminate or suspend access to
-						our service immediately, without prior notice, for any
-						reason, including but not limited to:
-					</p>
-					<ul>
-						<li>Violation of these Terms of Service</li>
-						<li>Fraudulent or illegal activity</li>
-						<li>Abuse of our service or systems</li>
-					</ul>
-
-					<h2>9. Changes to Terms</h2>
-
-					<p>
-						We reserve the right to modify these terms at any time.
-						Changes will be effective immediately upon posting on
-						this page. Your continued use of the service after any
-						changes constitutes acceptance of the new terms.
-					</p>
-
-					<h2>10. Governing Law</h2>
-
-					<p>
-						These terms shall be governed by and construed in
-						accordance with applicable laws. Any disputes arising
-						from these terms or use of our service shall be resolved
-						through appropriate legal channels.
-					</p>
-
-					<h2>11. Contact Information</h2>
-
-					<p>
-						If you have any questions about these Terms of Service,
-						please contact us:
-					</p>
-					<ul>
-						<li>Email: legal@example.com</li>
-						<li>
-							Contact Form:{" "}
-							<a
-								href='/contact'
-								className='text-blue-600 hover:underline'>
-								example.com/contact
-							</a>
-						</li>
-					</ul>
-
-					<h2>12. Severability</h2>
-
-					<p>
-						If any provision of these terms is found to be
-						unenforceable or invalid, that provision shall be
-						limited or eliminated to the minimum extent necessary so
-						that these terms shall otherwise remain in full force
-						and effect.
-					</p>
-
-					<div className='bg-slate-50 border border-slate-200 rounded-lg p-6 mt-8'>
-						<h3 className='text-lg font-semibold text-slate-900 mb-2'>
-							Questions?
-						</h3>
-						<p className='text-slate-700'>
-							If you have any questions about these terms or need
-							clarification on any point, please don&apos;t
-							hesitate to{" "}
-							<a
-								href='/contact'
-								className='text-blue-600 hover:underline'>
-								contact us
-							</a>
-							. We&apos;re here to help!
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+          {/* Final Questions Box */}
+          <div className="bg-slate-100 border border-slate-200 rounded-2xl p-6 shadow-sm text-center">
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">
+              Questions?
+            </h3>
+            <p className="text-slate-700">
+              If you have any questions about these Terms,{" "}
+              <a href="/contact" className="text-blue-600 hover:underline">
+                contact us
+              </a>
+              . We’re here to help!
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
 }
+
