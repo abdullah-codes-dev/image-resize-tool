@@ -8,27 +8,27 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "ResizeIt - Professional Image Resizing Tool | Free Online Image Resizer",
+	title: "Ammy Resize - Professional Image Resizing Tool | Free Online Image Resizer",
 	description:
 		"Resize images online for free. Professional image resizing tool with dimension control, file size optimization, and batch processing. Support for JPG, PNG, WebP formats.",
 	keywords:
 		"image resize, photo resize, image compression, online image editor, free image resizer, photo editor",
-	authors: [{ name: "ResizeIt Team" }],
-	creator: "ResizeIt",
-	publisher: "ResizeIt",
+	authors: [{ name: "Ammy Resize Team" }],
+	creator: "Ammy Resize",
+	publisher: "Ammy Resize",
 	robots: "index, follow",
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://example.com",
+		url: "https://ammyvirk.site",
 		title: "ResizeIt - Professional Image Resizing Tool",
 		description:
 			"Resize images online for free with our professional image resizing tool.",
-		siteName: "ResizeIt",
+		siteName: "Ammy Resize",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "ResizeIt - Professional Image Resizing Tool",
+		title: "Ammy Resize- Professional Image Resizing Tool",
 		description:
 			"Resize images online for free with our professional image resizing tool.",
 	},
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
 const GoogleAnalytics = () => {
 	return (
 		<>
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GXF90BYWG"></script>
 			<script
 				dangerouslySetInnerHTML={{
 					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
-						gtag('config', 'G-XXXXXXXXXX');
+						gtag('config', 'G-8GXF90BYWG');
 					`,
 				}}
 			/>
@@ -62,10 +62,10 @@ export default function RootLayout({
 		<html lang='en' suppressHydrationWarning>
 			<head>
 				{/* Google Search Console Verification */}
-				<meta name="google-site-verification" content="YOUR-VERIFICATION-CODE" />
+				<meta name="google-site-verification" content="7dYbm5_iMr336y4cH-MyFP-vcr0Fy-VFhZtzJXPTzDI" />
 
 				{/* Google AdSense */}
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous"></script>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1791146899524566" crossOrigin="anonymous"></script>
 
 				{/* Google Analytics */}
 				<GoogleAnalytics />
